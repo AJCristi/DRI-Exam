@@ -1,0 +1,181 @@
+body {
+  font-family: Arial;
+  padding: 1rem;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.product img {
+  margin-bottom: 0.5rem;
+}
+
+.product input {
+  width: 50px;
+  margin: 0.5rem 0;
+}
+
+.discount {
+  color: green;
+}
+
+.cart-coupon {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.cart-coupon input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.cart-coupon {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.cart-coupon input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.cart-coupon button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-coupon button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.cart-coupon button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.coupon-message {
+  flex-basis: 100%;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.coupon-message.success {
+  color: green;
+}
+
+.coupon-message.error {
+  color: red;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cart-card {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.cart-card.fade-out {
+  opacity: 0;
+}
+
+.cart-image {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  background: #f8f8f8;
+  border-radius: 4px;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.remove-btn {
+  margin-top: 0.5rem;
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #ff0000;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 0.5rem;
+}
+
+.discounted {
+  color: #e53935;
+  font-weight: bold;
+}
+
+.cart-total {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.coupon-message {
+  flex-basis: 100%;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  margin-left: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.coupon-message.success {
+  color: green;
+}
+
+.coupon-message.error {
+  color: red;
+}
