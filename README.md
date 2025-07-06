@@ -22,8 +22,8 @@ A simple e-commerce cart app built with **Vite**, **JavaScript (ES6+)**, and **J
 
 ---
 
-## 📂 Project Structure
-
+## Project Structure
+```
 .
 ├── index.html
 ├── main.js
@@ -41,11 +41,11 @@ A simple e-commerce cart app built with **Vite**, **JavaScript (ES6+)**, and **J
 ├── /styles
 │ └── main.css
 └── README.md
-
+```
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -75,3 +75,39 @@ npm test
 | Code     | Description                               |
 | -------- | ----------------------------------------- |
 | `SAVE10` | 10% off items ≥ \$100, max \$50 per item  |
+
+---
+
+## Features Implemented
+
+- Product list fetched from a mock API
+- Grid-based product display with images, prices, quantity input, and "Add to Cart" button
+- Fully functional shopping cart with:
+  - Item quantity tracking
+  - Remove item functionality
+  - Subtotal per item
+  - Grand total
+- Coupon code support (`SAVE10`, `Easy-to-add via array`) with:
+  - Minimum price conditions
+  - Discount caps per item
+- Dynamic coupon rule engine for easy expansion
+- Cart state persisted using `localStorage`
+- UI feedback on coupon success/error
+- Unit tests for cart logic using Jest
+
+---
+
+## Assumptions
+
+- Coupon codes are **case-insensitive** (e.g., `save10`, `SAVE10`, `Save10` all valid)
+- Each product has a static price (no variants or dynamic pricing)
+- Quantity input is validated to be `>= 1` before adding to cart
+- Coupon discounts apply per item (not cart-wide)
+- UI is kept minimal with a focus on functionality and testability
+- Cart automatically refreshes on coupon changes or item updates
+
+---
+
+## Time Spent
+
+- All in all 8-12 hours across 1 week due to prior commitments
