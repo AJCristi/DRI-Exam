@@ -50,6 +50,27 @@ A simple e-commerce cart app built with **Vite**, **JavaScript (ES6+)**, and **J
 └── README.md                    
 ```
 
+## Requirements
+
+To run this project locally, you’ll need:
+	
+| Requirement     | Version                         |
+| --------------- | ------------------------------- |
+| Node.js         | >= 16.0.0                       |
+| npm             | >= 8.0.0                        |
+| Vite            | Included via npm                |
+| Jest            | Installed as dev dependency     |
+	
+You can check your installed versions by running:
+```
+node -v
+npm -v
+```
+
+To install dependencies (including Jest and Vite), just run:
+```
+npm install
+```
 ---
 
 ## Getting Started
@@ -60,7 +81,7 @@ A simple e-commerce cart app built with **Vite**, **JavaScript (ES6+)**, and **J
 git clone https://github.com/AJCristi/DRI-Exam.git
 ```
 
-###2. Install dependencies
+### 2. Install dependencies
 
 ```
 npm install
