@@ -25,22 +25,29 @@ A simple e-commerce cart app built with **Vite**, **JavaScript (ES6+)**, and **J
 ## Project Structure
 ```
 .
-├── index.html
-├── main.js
-├── /src
-│ ├── /cart
-│ │ ├── cartFunctions.js
-│ │ └── couponRules.js
-│ ├── /components
-│ │ ├── productRenderer.js
-│ │ └── cartRenderer.js
-│ └── /api
-│ └── mockProducts.js
-├── /tests
-│ └── cartFunctions.test.js
-├── /styles
-│ └── main.css
-└── README.md
+├── public/
+├── src/
+│   ├── api/
+│   │   └── api.js               
+│   ├── cart/
+│   │   ├── CartFunctions.js     
+│   │   ├── Coupons.js           
+│   ├── components/
+│   │   ├── Cart.js              
+│   │   └── ProductList.js       
+│   ├── styles/
+│   │   └── style.css            
+│   ├── tests/
+│   │   └── cartFunctions.test.js
+│   └── main.js 
+├── index.html                   
+├── style.css                    
+├── .gitignore
+├── babel.config.js              
+├── LICENSE
+├── package.json
+├── package-lock.json
+└── README.md                    
 ```
 
 ---
@@ -110,4 +117,4 @@ npm test
 
 ## Time Spent
 
-- All in all 8-12 hours across 1 week due to prior commitments
+- All in all 9-12 hours across 1 week due to prior commitments
